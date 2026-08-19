@@ -1,0 +1,56 @@
+# Visual Studio / MSBuild
+.vs/
+*.suo
+*.user
+*.vcxproj.user
+*.VC.opendb
+*.VC.db
+*.VC.db-shm
+*.VC.db-wal
+Browse.VC.db
+Browse.VC.db-shm
+Browse.VC.db-wal
+
+# Build outputs (Debug/Release, both x86 and x64)
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+Game2048/x64/
+Game2048/x86/
+Game2048/Debug/
+Game2048/Release/
+
+# Intermediate obj / pdb / ilk / res / ipch / idb / tlog / exp / lib / pch / lastbuildstate / recipe
+*.obj
+*.iobj
+*.pdb
+*.ipch
+*.ilk
+*.idb
+*.res
+*.exp
+*.lib
+*.pch
+*.tlog
+*.recipe
+*.lastbuildstate
+*.clog
+*.log
+*.tlog/
+
+# Source-generated JSON artifact files from newer MSVC tooling
+*.dt.d.json
+*.dt.module.json
+*.dt.module.json.command
+
+# Resource editor cache
+*.aps
+*.rc2.bak
+Game2048.ico.bak
+
+# Binaries (optional: keep only source, strip generated executables)
+*.exe
+*.dll
