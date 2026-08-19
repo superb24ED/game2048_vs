@@ -18,7 +18,7 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// ÖÐÎÄ(¼òÌå£¬ÖÐ¹ú) resources
+// ä¸­æ–‡(ç®€ä½“ï¼Œä¸­å›½) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
 LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
@@ -42,16 +42,16 @@ IDI_SMALL               ICON                    "small.ico"
 
 IDC_GAME2048 MENU
 BEGIN
-    POPUP "ÓÎÏ·(&G)"
+    POPUP "æ¸¸æˆ(&G)"
     BEGIN
-        MENUITEM "ÐÂÓÎÏ·(&N)",                     IDM_NEWGAME
-        MENUITEM "ÅÅÐÐ°ñ(&L)",                     IDM_LEADERBOARD
+        MENUITEM "æ–°æ¸¸æˆ(&N)",                     IDM_NEWGAME
+        MENUITEM "æŽ’è¡Œæ¦œ(&L)",                     IDM_LEADERBOARD
         MENUITEM SEPARATOR
-        MENUITEM "ÍË³ö(&X)",                      IDM_EXIT
+        MENUITEM "é€€å‡º(&X)",                      IDM_EXIT
     END
-    POPUP "°ïÖú(&H)"
+    POPUP "å¸®åŠ©(&H)"
     BEGIN
-        MENUITEM "¹ØÓÚ(&A) ...",                  IDM_ABOUT
+        MENUITEM "å…³äºŽ(&A) ...",                  IDM_ABOUT
     END
 END
 
@@ -75,13 +75,13 @@ END
 
 IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "¹ØÓÚ Game2048"
+CAPTION "å…³äºŽ Game2048"
 FONT 9, "MS Shell Dlg", 0, 0, 0x1
 BEGIN
     ICON            IDI_GAME2048,IDC_STATIC,14,14,20,20
-    LTEXT           "Game2048, °æ±¾ 1.0\nSuperb24ED\n2903665506@qq.com",IDC_STATIC,40,14,114,21,SS_NOPREFIX
-    LTEXT           "°æÈ¨ËùÓÐ(c) 2024",IDC_STATIC,40,30,114,8,0,WS_EX_TRANSPARENT
-    DEFPUSHBUTTON   "È·¶¨",IDOK,113,41,50,14,WS_GROUP
+    LTEXT           "Game2048, ç‰ˆæœ¬ 1.0\nSuperb24ED - 2903665506@qq.com",IDC_STATIC,40,14,114,21,SS_NOPREFIX
+    LTEXT           "FreeSoftware 2024",IDC_STATIC,40,30,114,8,0,WS_EX_TRANSPARENT
+    DEFPUSHBUTTON   "ç¡®å®š",IDOK,113,41,50,14,WS_GROUP
 END
 
 IDD_GAMEOVER_DIALOG DIALOGEX 0, 0, 148, 63
@@ -89,55 +89,55 @@ STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_CAPTION | WS_SYSMENU
 CAPTION "Game2048"
 FONT 9, "MS Shell Dlg", 0, 0, 0x1
 BEGIN
-    DEFPUSHBUTTON   "ÖØÐÂ¿ªÊ¼(&R)",IDC_BUTTON_CONTINUE,10,40,50,14
-    PUSHBUTTON      "È¡Ïû(&C)",IDC_BUTTON_CANCEL,88,40,50,14
-    CTEXT           "ÓÎÏ·½áÊø!",IDC_STATIC,10,10,128,20,SS_CENTERIMAGE
+    DEFPUSHBUTTON   "é‡æ–°å¼€å§‹(&R)",IDC_BUTTON_CONTINUE,10,40,50,14
+    PUSHBUTTON      "å–æ¶ˆ(&C)",IDC_BUTTON_CANCEL,88,40,50,14
+    CTEXT           "æ¸¸æˆç»“æŸ!",IDC_STATIC,10,10,128,20,SS_CENTERIMAGE
 END
 
 IDD_FIRSTWIN_DIALOG DIALOGEX 0, 0, 188, 81
 STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_CAPTION | WS_SYSMENU
-CAPTION "ÄãÓ®ÁË"
+CAPTION "ä½ èµ¢äº†"
 FONT 9, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    DEFPUSHBUTTON   "¼ÌÐøÌôÕ½(&R)",IDC_BUTTON_CONTINUE,29,60,50,14
-    PUSHBUTTON      "ÐÂµÄÓÎÏ·(&N)",IDC_BUTTON_NEWGAME,101,60,50,14
-    CTEXT           "³É¹¦»ñÈ¡2048£¡\nÊÇ·ñ¼ÌÐøÓÎÏ·?",IDC_STATIC,47,23,100,28
+    DEFPUSHBUTTON   "ç»§ç»­æŒ‘æˆ˜(&R)",IDC_BUTTON_CONTINUE,29,60,50,14
+    PUSHBUTTON      "æ–°çš„æ¸¸æˆ(&N)",IDC_BUTTON_NEWGAME,101,60,50,14
+    CTEXT           "æˆåŠŸèŽ·å–2048ï¼\næ˜¯å¦ç»§ç»­æ¸¸æˆ?",IDC_STATIC,47,23,100,28
 END
 
 IDD_LEADERBOARD_DIALOG DIALOGEX 0, 0, 260, 300
 STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "ÅÅÐÐ°ñ - Top 10"
+CAPTION "æŽ’è¡Œæ¦œ - Top 10"
 FONT 9, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    LTEXT           "??  Game2048  ÅÅ ÐÐ °ñ  -  Top 10",IDC_STATIC,14,8,232,14,SS_CENTER
-    LTEXT           "Ãû´Î  Íæ¼Ò                ·ÖÊý      ´ï³ÉÊ±¼ä",IDC_STATIC,14,24,232,10
+    LTEXT           "  Game2048  æŽ’ è¡Œ æ¦œ  -  Top 10",IDC_STATIC,14,8,232,14,SS_CENTER
+    LTEXT           "åæ¬¡  çŽ©å®¶                åˆ†æ•°      è¾¾æˆæ—¶é—´",IDC_STATIC,14,24,232,10
     LISTBOX         IDC_LIST_SCORES,14,36,232,196,LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP | WS_BORDER
     LTEXT           "",IDC_STATIC_SCORE_CUR,14,240,160,10
-    PUSHBUTTON      "Çå¿ÕÅÅÐÐ°ñ(&C)",IDC_BUTTON_CLEAR,14,274,70,14
-    DEFPUSHBUTTON   "È·¶¨",IDOK,200,274,46,14,WS_GROUP
+    PUSHBUTTON      "æ¸…ç©ºæŽ’è¡Œæ¦œ(&C)",IDC_BUTTON_CLEAR,14,274,70,14
+    DEFPUSHBUTTON   "ç¡®å®š",IDOK,200,274,46,14,WS_GROUP
 END
 
 IDD_INPUTNAME_DIALOG DIALOGEX 0, 0, 210, 90
 STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "¹§Ï²Èë°ñ£¡"
+CAPTION "æ­å–œå…¥æ¦œï¼"
 FONT 9, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    CTEXT           "¹§Ï²½øÈë°ñµ¥£¡ÁôÏÂÄúµÄ´óÃû°É¡«\n(Áô¿ÕÔòÒÔ¡¸ÄäÃûÍæ¼Ò¡¹±£´æ)",IDC_STATIC,14,10,182,24
+    CTEXT           "æ­å–œè¿›å…¥æ¦œå•ï¼ç•™ä¸‹æ‚¨çš„å¤§åå§ï½ž\n(ç•™ç©ºåˆ™ä»¥ã€ŒåŒ¿åçŽ©å®¶ã€ä¿å­˜)",IDC_STATIC,14,10,182,24
     EDITTEXT        IDC_EDIT_NAME,19,42,172,14,ES_AUTOHSCROLL | WS_BORDER | WS_TABSTOP
-    DEFPUSHBUTTON   "È·¶¨(&O)",IDOK,90,66,50,14,WS_GROUP
-    PUSHBUTTON      "Ìø¹ý(&S)",IDCANCEL,144,66,50,14
+    DEFPUSHBUTTON   "ç¡®å®š(&O)",IDOK,90,66,50,14,WS_GROUP
+    PUSHBUTTON      "è·³è¿‡(&S)",IDCANCEL,144,66,50,14
 END
 
 IDD_NEWRECORD_DIALOG DIALOGEX 0, 0, 240, 140
 STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "?? ÐÂ¼ÍÂ¼£¡"
+CAPTION "?? æ–°çºªå½•ï¼"
 FONT 9, "MS Shell Dlg", 700, 0, 0x1
 BEGIN
-    CTEXT           "?? ??  ¹§ Ï² Èë °ñ £¡  ??",IDC_STATIC,14,10,212,18
+    CTEXT           "?? ??  æ­ å–œ å…¥ æ¦œ ï¼  ??",IDC_STATIC,14,10,212,18
     LTEXT           "",IDC_STATIC_RANK,14,42,212,16
     LTEXT           "",IDC_STATIC_SCORE_CUR,14,62,212,16
     LTEXT           "",IDC_STATIC_CONGRATS,14,100,212,14
-    DEFPUSHBUTTON   "ºÃµÄ",IDOK,178,118,48,14,WS_GROUP
+    DEFPUSHBUTTON   "å¥½çš„",IDOK,178,118,48,14,WS_GROUP
 END
 
 
@@ -233,7 +233,7 @@ BEGIN
     IDC_GAME2048Window      "GAME2048WINDOW"
 END
 
-#endif    // ÖÐÎÄ(¼òÌå£¬ÖÐ¹ú) resources
+#endif    // ä¸­æ–‡(ç®€ä½“ï¼Œä¸­å›½) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
